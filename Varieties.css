@@ -1,0 +1,336 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(178, 62, 101);
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #43082a;
+  }
+  
+  .active {
+    background-color: rgb(230, 128, 162);
+    color: rgb(230, 128, 162);
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .header {
+    background-color: rgba(252, 169, 189, 0.5); /* 50% opacity added*/ 
+    padding: 20px;
+    height: 300px; 
+    border: 5px solid #fbafc0;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: flex-start; /* changed from center to flex-start */
+    align-items: center;
+    color: #fff; /* text color */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* add text shadow for better readability */
+  }
+  
+  .header__title {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 100px; /* add some margin to the left */
+  }
+
+      /*for the image*/
+      .background-image-container {
+        position: fixed; /* this will make the container fixed */
+        top: 0; 
+        left: 0;
+        width: 100%; 
+        height: 100vh; 
+        z-index: -1; /* this will make the container appear behind the other elements */
+        overflow: hidden;
+      }
+      
+      .background-image {
+        width: 100%; 
+        height: 100%; 
+        object-fit: cover; 
+        object-position: center; 
+      }
+  
+  .flex-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .flex-item {
+    padding: 20px;
+    width: 100%;
+    background-color: lightpink;
+    border: 5px solid #fbafc0;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 2%;
+    margin-top: 20px; /* add spacing between header and intro container */
+    margin-bottom: 2%;
+    display: flex;
+    justify-content: flex-start; /* changed from center to flex-start */
+    align-items: center;
+    font-size: 1.2em;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+    color: white;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 4fr);
+    grid-gap: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+  
+  #div1 {
+    background-color: lightpink;
+    color: white;
+    grid-column: 2 / 4;
+    grid-row: 1 / 20;
+    font-size: 25px;
+    text-align: left; 
+    padding: 10%;
+    margin: 10px;
+    overflow: hidden;
+    font-family: 'Times New Roman', Times, serif;
+    border: 5px solid #fbafc0;
+    border-radius: 5px;
+    text-shadow: 1px 1px 2px rgba(249, 120, 168, 0.5); /* add text shadow for better readability */
+  }
+
+  #div2 {
+    background-image: url(herbaceous.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-column: 1 / 2;
+    grid-row: 1 / 20;
+    font-size: 23px; 
+    padding: 10%;
+    margin: 10px;
+    overflow: hidden;
+    border: 5px solid #fbafc0;
+    border-radius: 5px;
+  }
+
+  #div3 {
+    background-color: lightpink;
+    grid-column: 1 / 3;
+    grid-row: 20 / 43;
+    font-size: 25px;
+    text-align: left; 
+    padding: 10%;
+    margin: 10px;
+    overflow: hidden;
+    font-family: 'Times New Roman', Times, serif;
+    border: 5px solid #fbafc0;
+    border-radius: 5px;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(249, 120, 168, 0.5); /* add text shadow for better readability */
+  }
+
+  #div4 {
+    background-image: url(header-tree-peony-rose.jpg);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-column: 3 / 4;
+    grid-row: 20 / 43;
+    padding: 10%;
+    margin: 10px;
+    overflow: hidden;
+    border: 5px solid #fbafc0;
+    border-radius: 5px;
+  }
+
+  #div5 {
+    background-image: url(paeonia-Julia-Rose-itoh-peony.webp);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-column: 1 / 2;
+    grid-row: 43 / 66;
+    padding: 10%;
+    margin: 10px;
+    overflow: hidden;
+    border: 5px solid #fbafc0;
+    border-radius: 5px;
+  }
+
+  #div6 {
+    background-color: lightpink;
+    grid-column: 2 / 4;
+    grid-row: 43 / 66;
+    font-size: 25px;
+    text-align: left; 
+    padding: 10%;
+    margin: 10px;
+    overflow: hidden;
+    font-family: 'Times New Roman', Times, serif;
+    border: 5px solid #fbafc0;
+    border-radius: 5px;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(249, 120, 168, 0.5); /* add text shadow for better readability */
+  }
+
+  #div7 {
+    background-image: url(single.png);
+    background-position: right;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-column: 3 / 4;
+    grid-row: 66 / 89;
+    padding: 10%;
+    margin: 10px;
+    overflow: hidden;
+    border: 5px solid #fbafc0;
+    border-radius: 5px;
+  }
+
+  #div8 {
+    background-color: lightpink;
+    grid-column: 1 / 3;
+    grid-row: 66 / 89;
+    font-size: 25px;
+    text-align: left; 
+    padding: 10%;
+    margin: 10px;
+    overflow: hidden;
+    font-family: 'Times New Roman', Times, serif;
+    border: 5px solid #fbafc0;
+    border-radius: 5px;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(249, 120, 168, 0.5); /* add text shadow for better readability */
+  }
+
+  #div9 {
+    background-image: url(Nice_Gal_Brooks_Gardens_peonies.webp);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-column: 1 / 2;
+    grid-row: 89 / 112;
+    padding: 10%;
+    margin: 10px;
+    overflow: hidden;
+    border: 5px solid #fbafc0;
+    border-radius: 5px;
+  }
+
+  #div10 {
+    background-color: lightpink;
+    grid-column: 2 / 4;
+    grid-row: 89 / 112;
+    font-size: 25px;
+    text-align: left; 
+    padding: 10%;
+    margin: 10px;
+    overflow: hidden;
+    font-family: 'Times New Roman', Times, serif;
+    border: 5px solid #fbafc0;
+    border-radius: 5px;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(249, 120, 168, 0.5); /* add text shadow for better readability */
+  }
+
+  #div11 {
+    background-image: url(japanese.jpg);
+    background-position: right;
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    grid-column: 3 / 4;
+    grid-row: 112 / 135;
+    padding: 10%;
+    margin: 10px;
+    overflow: hidden;
+    border: 5px solid #fbafc0;
+    border-radius: 5px;
+  }
+
+  #div12 {
+    background-color: lightpink;
+    grid-column: 1 / 3;
+    grid-row: 112 / 135;
+    font-size: 25px;
+    text-align: left; 
+    padding: 10%;
+    margin: 10px;
+    overflow: hidden;
+    font-family: 'Times New Roman', Times, serif;
+    border: 5px solid #fbafc0;
+    border-radius: 5px;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(249, 120, 168, 0.5); /* add text shadow for better readability */
+  }
+
+  #div13 {
+    background-image: url(anemone.jpg);
+    background-position: right;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-column: 1 / 2;
+    grid-row: 135 / 158;
+    padding: 10%;
+    margin: 10px;
+    overflow: hidden;
+    border: 5px solid #fbafc0;
+    border-radius: 5px;
+  }
+
+  #div14 {
+    background-color: lightpink;
+    grid-column: 2 / 4;
+    grid-row: 135 / 158;
+    font-size: 25px;
+    text-align: left; 
+    padding: 10%;
+    margin: 10px;
+    overflow: hidden;
+    font-family: 'Times New Roman', Times, serif;
+    border: 5px solid #fbafc0;
+    border-radius: 5px;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(249, 120, 168, 0.5); /* add text shadow for better readability */
+  }
+
+  footer {
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(252, 169, 189, 0.5);
+    padding: 20px;
+    height: 150px; 
+    color: #fff; /* text color */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* text shadow for better readability */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #fbafc0;
+    border-radius: 5px;
+    font-size: 1.2em;
+  }

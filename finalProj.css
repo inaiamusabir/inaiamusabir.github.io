@@ -1,0 +1,178 @@
+.parent {
+    height: 100vh;
+    display:grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: repeat(12, 1fr);
+  }
+  
+  .parent > div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 50px;
+      background-color: black;
+      border: solid 10px pink;
+      color: rgb(255, 255, 255);
+      font-family: 'Times New Roman', Times, serif;
+  }
+  
+  #div1 {
+      background-color: rgba(255, 182, 193, 0.7);
+      grid-column: 1 / 4;
+      grid-row: 1 / 3;
+      height: 200px;
+      text-align: left;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    }    
+  
+  #div2 {
+      background-color: lightpink;
+      grid-column: 1 / 2;
+      grid-row: 3 / 5;
+      overflow: hidden;
+    }    
+  
+  #div3 {
+      background-color: lightpink;        /*(255, 252, 219);  (yellowish color that compliments pink*/
+      grid-column: 2 / 4;
+      grid-row: 3 / 5;
+      font-size: 23px;
+      text-align: left; 
+      margin: 10px;
+      overflow: hidden;
+      font-style: oblique;
+      font-family: 'Times New Roman', Times, serif;
+      text-shadow: 1px 1px 2px rgba(249, 120, 168, 0.5); /* add text shadow for better readability */
+    }    
+  
+    #div4 {
+      background-color: lightpink;
+      grid-column: 1 / 3;
+      grid-row: 5 / 7;
+      font-size: 23px;
+      text-align: left; 
+      margin: 10px;
+      overflow: hidden;
+      font-style: oblique;
+      font-family: 'Times New Roman', Times, serif;
+      text-shadow: 1px 1px 2px rgba(249, 120, 168, 0.5); /* add text shadow for better readability */
+    }    
+  
+  #div5 {
+      background-color: rgb(255, 252, 219);;
+      grid-column: 3 / 4;
+      grid-row: 5 / 7;
+      background-image: url(nedladdning\ \(51\).jpg);
+      overflow: hidden;
+      background-size: cover;
+      background-position: 50% 30%;
+    }    
+  
+  #div6 {
+      background-color: rgb(255, 252, 219);
+      grid-column: 1 / 2;
+      grid-row: 7 / 10;
+      overflow: hidden;
+      font-size: 23px;
+      color: lightcoral;
+      font-family: 'Times New Roman', Times, serif;
+    }    
+  
+  #div7 {
+      background-color: rgb(255, 252, 219);
+      grid-column: 2 / 3;
+      grid-row: 7 / 10;
+      font-size: 23px;
+      overflow: hidden;
+      color: lightcoral;
+      font-family: 'Times New Roman', Times, serif;
+  }    
+
+  #div8 {
+    background-color: rgb(255, 252, 219);
+    grid-column: 3 / 4;
+    grid-row: 7 / 10;
+    font-size: 23px;
+    overflow: hidden;
+    color: lightcoral;
+    font-family: 'Times New Roman', Times, serif;
+  }    
+
+  #div9 {
+    background-color: lightpink;
+    grid-column: 1 / 4;
+    grid-row: 10 / 12;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}    
+  
+  #banner {
+    width: 1200px;
+    height: 100px;
+  
+  }
+  
+  #div9, #div8, #div7, #div6, #div5, #div4, #div3, #div2, #div1{
+    padding: 100px;
+    font-size: 50;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(178, 62, 101);
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #43082a;
+  }
+  
+  .active {
+    background-color: rgb(230, 128, 162);
+    color: rgb(230, 128, 162);
+  }
+
+  .button-container {
+    text-align: center;
+  }
+  
+  .button-container button {
+    background-color: rgb(243, 168, 179);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+        /*for the image*/
+        .background-image-container {
+          position: fixed; /* this will make the container fixed */
+          top: 0; 
+          left: 0;
+          width: 100%; 
+          height: 100vh; 
+          z-index: -1; /* this will make the container appear behind the other elements */
+          overflow: hidden;
+        }
+        
+        .background-image {
+          width: 100%; 
+          height: 100%; 
+          object-fit: cover; 
+          object-position: center; 
+        }
